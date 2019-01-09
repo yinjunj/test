@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>vue-ebook</title>
+    <!--字体-->
+    <script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+    <script type="text/javascript">
+      $youziku.load("body", "5f27d0983b2b475b92933443d888fa46", "chenwixun-jian");
+      /*$youziku.load("#id1,.class1,h1", "5f27d0983b2b475b92933443d888fa46", "chenwixun-jian");*/
+      /*．．．*/
+      $youziku.draw();
+
+      //响应式字体大小
+      document.addEventListener('DOMContentLoaded',()=>{
+        const html = document.querySelector('html');
+        let fontSize = window.innerWidth/10;
+        fontSize = fontSize>50 ? 50 : fontSize;
+        html.style.fontSize = fontSize + 'px'
+      })
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but vue-ebook doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
