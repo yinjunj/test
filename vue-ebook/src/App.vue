@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="icon iconfont icon-dianzan"></div>
-    <span class="text">百度网盘</span>
+    <span class="text">百度网盘123</span>
     <router-view/>
   </div>
 </template>
