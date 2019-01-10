@@ -1,28 +1,17 @@
 <template>
   <div id="app">
-    <div class="icon iconfont icon-dianzan"></div>
-    <span class="text">百度网盘</span>
     <router-view/>
   </div>
 </template>
 <script>
-  import {mapGetters} from 'vuex'
 
-  export default {
-    computed:{
-      ...mapGetters(['test'])
-    },
-    mounted() {
-      this.$store.dispatch('setTest',9).then(()=>{
-        console.log(this.test)
-      })
-    }
-  }
 </script>
 <style lang="scss">
   @import "./assets/style/global.scss";
-  .text{
-    font-size: px2rem(22);
-    color: red;
+
+  #app{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
   }
 </style>
