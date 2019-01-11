@@ -1,21 +1,17 @@
 <template>
-    <div class="ebook">
-      百度
-      <helloWorld msg="hello"></helloWorld>
-    </div>
+  <ebook-reader></ebook-reader>
 </template>
 
 <script>
-  import helloWorld from '../../components/HelloWorld'
+  import ebookReader from "../../components/ebook/ebookReader";
     export default {
-        name: "index",
-        components:{
-          helloWorld
-        }
+      name: "index",
+      components:{
+          ebookReader
+      }
     }
 </script>
 
 <style lang="scss" scoped>
   @import "../../assets/style/global";
-
 </style>
