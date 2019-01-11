@@ -34,7 +34,7 @@
         },
         mounted() {
           //状态管理
-          this.$store.dispatch('setFileName',1)
+          this.$store.dispatch('setFileName',3)
 
           //动态路由
           console.log(this.$route.params.fileName);
