@@ -34,11 +34,7 @@
         },
         mounted() {
           //状态管理
-          this.$store.dispatch('setFileName',4)
-
-          //动态路由
-          console.log(this.$route.params.fileName);
-
+          this.$store.dispatch('setFileName',1)
           //阅读
           this.book = new Epub('./练就一双精确识人眼.epub');
           this.rendition = this.book.renderTo('read',{
